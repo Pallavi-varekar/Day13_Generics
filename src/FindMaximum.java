@@ -1,18 +1,24 @@
 public class FindMaximum
 {
     public static void main(String[] args) {
-        System.out.println("Welcome to Find Maximum Integers Problem using Generics");
-        Integer a = 89, b =99, c = 29;//variables
-        testMaximum (a,b,c);//calling method
+        System.out.println("Welcome to Find Maximum Float Problem using Generics");
+        String e = "Apple", f = "Orange" , g = "Mango";    //take variables strings
+
+        //calling directly without creating object bcoz testMaximum method also static.
+        testMaximum (e,f,g);//calling method
     }
-    private static void testMaximum(Integer a,Integer b, Integer c){
-        Integer max =a;//checking the condition and
-        if(b.compareTo(a)>0){
-            max = b;
+    //creating testMaximum method and passing parameter in string type
+    private static void testMaximum(String e, String f, String g) {
+        String max = e; //checking condition comparing and finding max string
+        if(f.compareTo(e)>0){
+            max = f;
         }
-        if(c.compareTo(max)>0){
-            max =c;
+        if(g.compareTo(max)>0){
+            max = g;
         }
-        System.out.println("maximum number is "+max);
+        System.out.println("Maximum String is: "+max);//print maximum string
+
     }
+
+
 }
